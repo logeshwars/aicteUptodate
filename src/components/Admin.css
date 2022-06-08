@@ -1,0 +1,121 @@
+.admin
+{
+    display: flex;
+}
+.sideNav
+{
+    border-right: var(--border);
+    min-height: calc(100vh - 100px);
+    max-height: max-content;
+    position:fixed;
+    top:60px;
+    display: flex;
+    z-index: 10;
+    background-color: white;
+    transition:ease-in-out 0.5s;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow);
+    padding:20px 10px;
+    width: 260px;
+    gap:1px;
+}
+.sideNav div:first-child
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AdminProfile
+{
+width: 40px;
+background-color: white;
+padding: 10px;
+border-radius: 50%;
+box-shadow: var(--shadow);
+}
+.iconImage
+{
+    width: 25px;
+}
+.sideNav div
+{
+    margin-top: 15px;
+    width:calc(100% - 10px);
+    padding:0px 5px;
+}
+.sideNav hr
+{
+    border: none;
+    height: 1px;
+    background-color: rgba(43, 255, 0, 0.295);
+}
+.sideNav div button
+{
+    border:none;
+    padding: 10px 20px;
+    background-color: white;
+    display: flex;
+    border:none;
+    width: 100%;
+    align-items: center;
+    gap:30px;
+}
+.sideNav div button span
+{
+    font-size: 0.8rem;
+}
+.sideNav div button:hover
+{
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary);
+}
+.sideNav h3
+{
+    background-color: var(--primary);
+    padding: 10px 40px;
+    box-shadow: var(--shadow);
+    color: white;
+    font-weight: 500;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}   
+.adminRightNav
+{
+    width: 100vw;
+}
+.adminRightNav
+{
+background-color: white;
+min-height:100%;
+padding: 10px 10px;
+}
+.menuButton img
+{
+width: 25px;
+}
+.menuButton 
+{
+    margin-right: 10px;
+    display: grid;
+    place-items: center;
+    padding: 0px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primary);
+    width: 40px;
+    box-shadow: var(--shadow);
+    height: 40px;
+}
+.menuButton:hover
+{
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.267);
+}
+.flex
+{
+    display: flex;
+    align-items: center;
+}

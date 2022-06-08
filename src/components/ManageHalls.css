@@ -1,0 +1,11 @@
+.mangehallsCreate input[type=text],.mangehallsCreate textarea
+{
+width:150px;
+height:30px;    
+box-shadow: var(--shadow);
+border: 1px solid var(--primary);
+border-radius:5px;
+background-color: whitesmoke;
+font-size: 0.7rem;
+padding:5px 10px;
+}

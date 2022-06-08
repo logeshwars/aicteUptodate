@@ -1,0 +1,176 @@
+.navBar
+{
+    padding: 10px 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    gap: 20px;
+    z-index: 2;
+    }
+    .loginButton
+    {
+        color:rgb(255, 255, 255);
+        border: none;
+        padding: 8px 20px;
+        display: flex;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.459);
+        align-items: center;
+        font-size: 0.8rem;
+        cursor:pointer;
+        background-color: var(--primary);
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .loginButton:hover
+    {
+        background-color: black;
+        transition-duration: 0.2s;
+        color: #ffffff; 
+    }
+
+    .logo
+    {
+        display: inline-block;
+        font-weight: bolder;
+        color:var(--primary);
+        font-size: 1.3rem;
+        /* text-shadow:1px 2px 3px rgba(112, 250, 48, 0.541) ; */
+       
+    }
+    .logoMiddle
+    {
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        margin:0px 2px;
+        transform: rotateZ(20deg);
+    }
+    .logoEvent
+    {font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.603);
+   }
+    .searchBox
+    {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      border-radius: 3px;
+      width: 35vw;
+      box-shadow: var(--shadow),-1px -1px 3px rgba(0, 0, 0, 0.212);
+    }
+    .searchBox input
+    {
+        padding: 0px 20px;
+        border: none;
+        height:100%;
+        flex: 1;
+        outline: none;
+    }
+    .searchBox button
+    {
+        padding:6px 10px;
+        border: none;
+        font-weight: bolder;
+        border-left: 1px solid black;
+        background-color: var(--primary);
+        cursor: pointer;
+
+    }
+    .searchBox Button:hover
+    {
+        background-color: black;
+        transition-duration: 0.2s;
+        color: #ffffff; 
+    }
+    .searchBox input::placeholder
+    {
+        font-size: 0.8rem;
+        position: relative;
+        bottom: 3px;
+        color: rgba(0, 0, 0, 0.507);
+        text-align: center;
+    }
+    .navBarInside
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .searchBoxMin
+    {
+        display: none;
+    }
+    ul{
+        list-style-type:none ;
+    }
+    .profile
+    {
+        height: max-content;
+        cursor: pointer;
+    }
+    .profile li div
+    {
+        padding: 5px 20px;
+        border-radius: 20px;
+        border:var(--border);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+    }
+    .profile li img
+    {
+        width: 20px;
+        border-radius: 50%;
+    }
+    .profile:hover .profileInner,.profile:focus .profileInner
+    {
+        display: block;
+    }
+    .profileInner
+    {
+        border: var(--border);
+        box-shadow: var(--shadow);
+        position:absolute;
+        padding: 0px;
+        background-color: white;
+        right: 30px;
+        margin-top: 2px;
+        border-radius: 3px;
+        display: block;
+    }
+    .profileInner li{
+        text-align: left;
+        padding: 5px 30px;
+    }
+    .profileInner li:hover
+{
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
+    .profileInner li:first-child
+    {
+border-bottom: var(--border);
+    }
+    @media screen and (max-width:720px) {
+        .searchBox
+        {
+         display: none;
+        }
+        .searchBoxMin
+        {
+         display:flex;
+         width: 100%;
+        }
+        .searchBoxMin button
+        {
+            flex: 1;
+        }
+    }

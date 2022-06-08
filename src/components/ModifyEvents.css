@@ -1,0 +1,115 @@
+.table
+{
+    
+    font-size: 0.8;
+    margin-top: 10px;
+    width: 98.5vw;
+    overflow-x: auto;
+}
+.addScroll::-webkit-scrollbar
+{
+    height: 10px;
+}
+.addScroll::-webkit-scrollbar-thumb
+{
+    background-color: var(--primary);
+    height:10px;
+    border-radius: 10px;
+}
+.addScroll::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    height: 10px;
+    box-shadow: inset 1px 1px 3px silver;
+}
+.table table
+{
+    min-width: 98.5vw;
+    max-width: max-content;
+    border-collapse: separate;
+    border-spacing: 0px 8px;
+}
+.table th
+{
+    font-size: .7rem;
+    padding: 12px 20px;
+    background-color: white;
+    border-top: var(--border1);
+    border-bottom: var(--border1);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.63);
+}
+.table th:first-child,.table td:first-child
+{
+    border-left: var(--border1);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.table th:last-child,.table td:last-child
+{
+    border-top-right-radius: 10px;
+    border-right: var(--border1);
+    border-bottom-right-radius: 10px;
+}
+.table tr
+{
+    background-color: white;
+}
+.table tr:hover
+{
+    cursor:pointer;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.158);
+    border-radius: 20px;
+}
+.table td{
+    font-size: 0.7rem;
+    border-top: var(--border1);
+    border-bottom: var(--border1);
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.tableWrap
+{
+    width: 200px;
+    font-size: .7rem;
+}
+.tableUpdate
+{
+    border: none;
+    color:rgb(0, 0, 0);
+    box-shadow: var(--shadow);
+    background-color: #bcffc5;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.tableUpdate:hover
+{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.205);
+}
+.tableDelete
+{
+    background-color: #ff9c9c;
+}
+.hr
+{
+    border:none;
+    background-color: rgba(192, 192, 192, 0.726);
+    
+    height: 1px;
+}
+.uploadedImg
+{
+    width: 150px;
+}
+.userProfile
+{
+    width: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.144);
+}

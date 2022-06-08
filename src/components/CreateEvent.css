@@ -1,0 +1,148 @@
+.createEvent
+{
+    height: max-content;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 3px;
+    border: var(--border);
+    width: calc(100% - 40px);
+}
+.createEventTitle h3
+{
+    color: rgba(127, 129, 126, 0.651);
+    padding: 8px 20px;
+    font-size: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.308);
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.349); */
+   
+}
+.eventInputs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10%;
+}
+.eventDesc label
+{
+    width: 68vw !important;
+}
+.eventDesc textarea
+{
+    width: 90%;
+    height: 150px;
+    resize: none;
+}
+.eventInside
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    /* gap: 30px; */
+    
+}
+.eventInside label
+{
+    font-size: 0.8rem;
+}
+.eventInside input,textarea,select
+{
+    width: 250px;
+    font-size: 0.8rem;
+    padding: 10px 10px;
+    background-color: rgb(255, 255, 255);
+    border: var(--border);
+    box-shadow: var(--shadow);
+    border-radius: 3px;
+}
+.eventInside label
+{
+    background-color: rgba(0, 162, 255, 0.082);
+    padding: 10px 10px ;
+    border-radius: 3px;
+    color:rgb(0, 132, 209);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    text-align: center;
+    border: 1px solid var(--primary);
+}
+.eventInside span
+{
+    font-size: 16px;
+}
+    .eventInside input::placeholder,textarea::placeholder
+{
+    font-size: 0.7rem;
+    color: rgb(85, 84, 84);
+   
+}
+.eventInside div{
+    width: 50%;
+}
+.eventCreate
+{
+    border: none;
+    box-shadow: var(--shadow);
+    background-image:linear-gradient(to top,rgb(56, 186, 252),var(--primary));
+    color: rgb(255, 255, 255);
+    padding: 10px 100px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    font-weight: bold;
+    
+}
+.eventCenterButton
+{
+    justify-content: center;
+}
+.eventCreate:hover
+{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+.upImage
+{
+    padding: 10px 10px !important;
+    cursor: pointer;
+    color:rgb(117, 116, 116) !important;
+    border: var(--border) !important;
+    background-color: white !important;
+    box-shadow: var(--shadow);
+    border-radius: 3px;
+    width:250px !important;
+}
+.uploadedImg
+{
+    width: 200px;
+}
+.loading div
+{
+    background-color: white;
+    display: grid;
+place-items: center;
+padding:20px;
+border-radius:10px;
+color:cornflowerblue
+    
+}
+.hallSlider
+{
+    width: 90vw;
+    background-color: whitesmoke;
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
